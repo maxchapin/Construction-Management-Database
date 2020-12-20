@@ -5,7 +5,7 @@ public class constructionQueries {
 
     public static void main (String[] args) throws SQLException {
 
-        Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3307/constructiondb?allowPublicKeyRetrieval=true&useSSL=false", "boss", "password");
+        Connection conn = DriverManager.getConnection("ADD_DATBASE_URL_HERE", "ADD_USER", "ADD_PASSWORD");
 
         Statement stmt = conn.createStatement();
 
