@@ -15,19 +15,19 @@ public class company_employees {
             }
             else if(choice == 2){
                 System.out.println("Enter name:");
-                String name = in.next();
+                String name = in.nextLine();
                 System.out.println("Enter DOB (yyyy-mm-dd):");
-                String dob = in.next();
+                String dob = in.nextLine();
                 System.out.println("Enter title:");
-                String title = in.next();
+                String title = in.nextLine();
                 System.out.println("Enter current project:");
-                int project = in.nextInt();
+                int project = in.nextInt();in.nextLine();
 
                 sql = "INSERT INTO `constructiondb`.`company_employees` (`empName`, `dob`, `title`, `project`) VALUES ('"+name+"', '"+dob+"', '"+title+"', '"+project+"');";
             }
             else if(choice == 3) {
                 System.out.println("Enter employee ID to be deleted:");
-                int id = in.nextInt();
+                int id = in.nextInt(); in.nextLine();
                 sql = "delete from company_employees where empId='" + id + "';";
             /*stmt.execute(sql);
             sql = "select * from company_employees;";
